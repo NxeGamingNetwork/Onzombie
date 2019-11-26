@@ -1,0 +1,18 @@
+{
+	"author": "x7airworker",
+	"version": "1.0",
+	"server_scripts": [
+		"server/utils.lua",
+		"server/player.lua",
+		"server/zombies.lua",
+		"server/mysterybox.lua"
+	],
+	"client_scripts": [
+		"client/hud/hud.lua",
+		"client/environment.lua"
+	],
+	"files": [
+		"client/hud/IndieFlower-Regular.ttf",
+		"client/hud/hud.html"
+	]
+}

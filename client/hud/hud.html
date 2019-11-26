@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: 'Indie Flower';
+                src: url(IndieFlower-Regular.ttf) format("truetype");
+            }
+
+            #money {
+                font-family: 'Indie Flower', cursive;
+                font-size: 3em;
+                position: fixed;
+                left: 2px;
+                color: #8a0303;
+                margin: 0
+            }
+
+            #perks {
+                font-family: 'Indie Flower', cursive;
+                position: fixed;
+                right: 2px;
+                top: 75px;
+            }
+
+            #roundCounter {
+                font-family: 'Indie Flower', cursive;
+                font-size: 3em;
+                position: fixed;
+                left: 2px;
+                bottom: 0;
+                color: #8a0303;
+                margin: 0
+            }
+
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="money"><span id="moneySpan">0</span>$</p>
+        <p id="roundCounter">Round <span id="roundSpan">0</span></p>
+        <script>
+            function setMoney(cash) {
+                document.getElementById("moneySpan").innerText = cash;
+            }
+            function setRound(round) {
+                document.getElementById("roundSpan").innerText = round;
+            }
+        </script>
+    </body>
+</html>
